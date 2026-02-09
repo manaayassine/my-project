@@ -15,15 +15,9 @@ body {
 }
 
 @keyframes pulse {
-    0% {
-        transform:scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+    0% { transform:scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 #envelope{
@@ -68,26 +62,12 @@ body {
     opacity: 1;
 }
 
-h1 {
-    font-size: 30px;
-    margin:0;
-}
-
-p {
-    font-size: 40px;
-}
+h1 { font-size: 30px; margin:0; }
+p { font-size: 40px; }
 
 /* Cat */
-
-.cat {
-    width: 250px;
-    margin: 10px 0;
-    transition: width 0.4s ease;
-}
-
-.letter-window.final .cat {
-    width: 180px;
-}
+.cat { width: 250px; margin: 10px 0; transition: width 0.4s ease; }
+.letter-window.final .cat { width: 180px; }
 
 /* buttons */
 .buttons {
@@ -97,22 +77,11 @@ p {
     position: relative;
 }
 
-.no-wrapper{
-    position:relative;
-}
+.no-wrapper{ position:relative; }
 
-.btn {
-    width: 120px;
-    cursor: pointer;
-    user-select: none;
-}
+.btn { width: 120px; cursor: pointer; user-select: none; }
 
-.yes-btn,
-.no-btn {
-width: 120px;
-height: auto;
-display: inline-block;
-}
+.yes-btn, .no-btn { width: 120px; height: auto; display: inline-block; }
 
 .yes-btn {
     position: relative;
@@ -136,4 +105,59 @@ display: inline-block;
     padding: 10px 20px;
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
+}
+
+/* Quiz popup */
+.quiz-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.quiz-content {
+  background: #fff0f5;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+#quiz-message {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+#quiz-next {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff6b81;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+#quiz-next:hover {
+  background-color: #ff4b61;
+}
+#quiz-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+}
+
+#quiz-feedback {
+  font-size: 16px;
+  color: red;
+  margin-top: 10px;
 }
