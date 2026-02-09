@@ -25,7 +25,7 @@ const quizFeedback = document.getElementById("quiz-feedback");
 // ---------------------------
 const quizQuestions = [
   { q: "Favorite sport?", answer: "football" },
-  { q: "Favorite Italian sweet?", answer: "tiramissu" },
+  { q: "Favorite Italian sweet?", answer: "tiramisu" },
   { q: "Favorite dog?", answer: "pomeranian" }
 ];
 
